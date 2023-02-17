@@ -4,8 +4,8 @@ This code is developed for sending automated whatsapp messages.
 This is intended to be used for Rotaract Purposes only.
 
 Developers:
-1. Akshay Kumar Kanive M
-2. Bhuvan M R
+1. Rtn. PP. Rtr. Akshay Kumar Kanive M
+2. Rtn. Rtr. Bhuvan M R
 
 In case of any queries, please write to akshaykanive@gmail.com or bhuvanmr575@gmail.com
 """
