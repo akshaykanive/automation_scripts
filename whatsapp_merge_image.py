@@ -8,6 +8,7 @@ In case of any queries, please write to akshaykanive@gmail.com
 """
 #Import required modules
 import pywhatkit
+import json
 
 #Get the phone numbers. Not sure what happends if non-whatsapp number is given.
 phone_nos=["+917892209752","+919725400338","+918970935199","+916203953049","+919817526747","+918884781268","+918050529348","+919606333566","+918296137566","+917204489655","+918861004710","+918277208895","+919831505081","+917204961211"]
@@ -16,6 +17,13 @@ print("Send the message for ",len(phone_nos), "people")
 names=["Prasanna"]
 #Get the payment reference for each participants
 #payment_ref=["dummy_payment_id"]
+
+with open('lions.json','r') as f:
+    data = json.load(f)
+# for i in data:
+#     if i["President Contact"]:
+#         print(i)
+
 path="/Users/akshaykanive/Desktop/holi_poster.jpeg"
 
 message="""
@@ -37,6 +45,7 @@ Looking forward to hosting your club, come join us to celebrate Holi not only to
 Please get in touch with regards to the registrations.
 """
 
-for i in range(len(phone_nos)):
+for i in range(len(data)):
     #message="Hello "+names[i]+",\nThank you for registerting for Rotaract Dist Conference.\n\n*Payment Reference:* "+payment_ref[i]+"\nPlease find the attached pass for the same. \nThis is an automated message. Please do not reply.😂 \n"
-    pywhatkit.sendwhats_image(phone_nos[i],path,message,tab_close=True,close_time=8)
+    if i["President Contact"]:
+        pywhatkit.sendwhats_image(i["President Contact"],path,message,tab_close=True,close_time=8)
