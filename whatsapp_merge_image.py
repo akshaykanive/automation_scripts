@@ -17,6 +17,8 @@ print("Send the message for ",len(phone_nos), "people")
 names=["Prasanna"]
 #Get the payment reference for each participants
 #payment_ref=["dummy_payment_id"]
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 with open('lions.json','r') as f:
     data = json.load(f)
@@ -49,3 +51,35 @@ for i in range(len(data)):
     #message="Hello "+names[i]+",\nThank you for registerting for Rotaract Dist Conference.\n\n*Payment Reference:* "+payment_ref[i]+"\nPlease find the attached pass for the same. \nThis is an automated message. Please do not reply.😂 \n"
     if i["President Contact"]:
         pywhatkit.sendwhats_image(i["President Contact"],path,message,tab_close=True,close_time=8)
+=======
+=======
+>>>>>>> e0f1c42 (Modified code for Holi Beta Testing)
+path="/Users/akshaykanive/Desktop/holi_poster.jpeg"
+
+message="""
+Warm Rotaract Greetings,
+
+Hope you're doing well. 
+
+We, the Rotaract club of Bangalore Jayanagar and Rotaract Bangalore West are bringing to you, the biggest and the first-ever Holi Celebration Event of RI District 3190 happening on 04 March 2023.  
+
+The Individual registrations are now open at rotaractjayanagar.org
+
+We are looking forward for your collaboration, the collaboration criteria is as follows:
+
+📌 *Collaboration Criteria* - 15 registrations for institution-based clubs and 10 registrations for community-based clubs.
+
+We have special offers for bulk registrations. 
+Looking forward to hosting your club, come join us to celebrate Holi not only to spread joy but also to serve a cause.
+
+Please get in touch with regards to the registrations.
+"""
+
+for i in range(len(phone_nos)):
+    #message="Hello "+names[i]+",\nThank you for registerting for Rotaract Dist Conference.\n\n*Payment Reference:* "+payment_ref[i]+"\nPlease find the attached pass for the same. \nThis is an automated message. Please do not reply.😂 \n"
+<<<<<<< HEAD
+    pywhatkit.sendwhats_image(phone_nos[i],path,message,tab_close=True,close_time=8)
+>>>>>>> e0f1c42 (Modified code for Holi Beta Testing)
+=======
+    pywhatkit.sendwhats_image(phone_nos[i],path,message,tab_close=True,close_time=8)
+>>>>>>> e0f1c42 (Modified code for Holi Beta Testing)
