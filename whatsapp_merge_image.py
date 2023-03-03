@@ -37,4 +37,5 @@ for registration in reg_file:
     payment_ref=reg_info[2]
     path="./Pass/"+payment_ref+".png"
     
+    #Trigger Whatsapp Message
     pywhatkit.sendwhats_image(phone_no,path,message,tab_close=True,close_time=8)
