@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HoliYaY 2023</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="user_name">Name</string>
+    <string name="mail_id_hint">Mail ID</string>
+    <string name="club_name">Club Name</string>
+    <string name="event_name">Event Name</string>
+    <string name="zone_stats_button_label">ZoneStats</string>
+    <string name="club_stats_button_label">ClubStats</string>
+    <string name="food_button_label">Food</string>
+    <string name="check_in_button_label">checkIn</string>
+    <string name="logistics_button_label">Logistics</string>
+    <string name="era_logo">HoliYaY Logo</string>
+</resources>

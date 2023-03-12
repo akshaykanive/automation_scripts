@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.holiyay.UserActivity"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nameHolder"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:text="Welcome \n"/>
+            </RelativeLayout>
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:src="@drawable/ic_register_hero"-->
+            <!--                    android:layout_alignParentTop="true"-->
+            <!--                    android:layout_alignParentRight="true"/>-->
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                style="@style/viewParent"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:text="LogOut"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                android:onClick="onLogOutClick"/>
+
+
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                style="@style/viewParent"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Event Details"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                android:onClick="onEventDetails"/>
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                style="@style/viewParent"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Agenda"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                android:onClick="onAgendaClick"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                style="@style/viewParent"-->
+            <!--                android:layout_gravity="start"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:text="Scaned Data"-->
+            <!--                android:textColor="@color/primaryTextColor"-->
+            <!--                android:textSize="17sp"-->
+            <!--                android:onClick="onScan"/>-->
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                style="@style/viewParent"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Point of Contact"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="17sp"
+                android:onClick="onPOCClick"/>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textPackageName"-->
+            <!--                style="@style/parent"-->
+            <!--                android:layout_marginTop="@dimen/loginViewsMargin">-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/msgText"-->
+            <!--                    style="@style/modifiedEditText"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:maxLines="1"-->
+            <!--                    android:text="Package Name"/>-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/textPackageType"-->
+            <!--                style="@style/parent"-->
+            <!--                android:layout_marginTop="@dimen/loginViewsMargin">-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/msgFormat"-->
+            <!--                    style="@style/modifiedEditText"-->
+            <!--                    android:text="Type of Scan"-->
+            <!--                    android:maxLines="1"-->
+            <!--                    android:inputType="text"/>-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/check_in_button"
+                    style="@style/loginButton"
+                    android:text="Check In"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/food_button"
+                    style="@style/loginButton"
+                    android:layout_marginLeft="190dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="Food" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

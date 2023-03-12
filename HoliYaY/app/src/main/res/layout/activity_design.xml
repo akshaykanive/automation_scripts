@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ECDFDF"
+    android:clipChildren="true"
+    android:fadingEdge="horizontal|vertical">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/era_logo_home"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="50dp"
+        android:contentDescription="@string/era_logo"
+        app:layout_constraintBottom_toTopOf="@+id/food_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rotafest_icon"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/food_button"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_below="@+id/era_logo_home"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#FF9800"
+        android:text="@string/food_button_label"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/check_in_button"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="30dp"
+        android:background="#F44336"
+        android:layout_below="@+id/era_logo_home"
+        android:text="@string/check_in_button_label"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/era_logo_home" />
+
+<!--    <Button-->
+<!--        android:id="@+id/zonal_statistics_button"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="123dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:background="#673AB7"-->
+<!--        android:text="@string/zone_stats_button_label"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/statistics_button2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/check_in_button"-->
+<!--        tools:ignore="TextContrastCheck" />-->
+
+    <!--    <Button-->
+<!--        android:id="@+id/statistics_button3"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="123dp"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="#03A9F4"-->
+<!--        android:text="@string/food_button_label"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/statistics_button2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/food_button" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/statistics_button2"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="123dp"-->
+<!--        android:layout_below="@+id/era_logo_home"-->
+<!--        android:layout_alignRight="@+id/food_button"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:layout_marginRight="-191dp"-->
+<!--        android:background="#3F51B5"-->
+<!--        android:text="@string/club_stats_button_label"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logistics_button" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/logistics_button"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="123dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="#E91E63"-->
+<!--        android:drawingCacheQuality="low"-->
+<!--        android:duplicateParentState="false"-->
+<!--        android:text="@string/logistics_button_label"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/food_button"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/check_in_button"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/era_logo_home" />-->
+
+</RelativeLayout>

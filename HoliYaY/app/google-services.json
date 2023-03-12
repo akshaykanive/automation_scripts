@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315486289896",
+    "project_id": "holiyay-2a97e",
+    "storage_bucket": "holiyay-2a97e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315486289896:android:c8b2f802d2c10ae94dee5d",
+        "android_client_info": {
+          "package_name": "com.example.holiyay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315486289896-0t7ote6st9dfuq8717s9chfdp01v93cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkqIp-l92zoeEbYL-Yx8kC_6sKBEjOgj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315486289896-0t7ote6st9dfuq8717s9chfdp01v93cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
